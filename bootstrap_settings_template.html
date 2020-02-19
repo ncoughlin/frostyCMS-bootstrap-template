@@ -23,7 +23,9 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <a class="btn btn-outline-success ml-auto mr-2" href="/newpost" role="button"> +New Post</a>
+            <button class="btn btn-outline-success ml-auto mr-2" type="button">
+                +New Post
+            </button>
             <ul class="navbar-nav ml-2 flex-nowrap">
                 <li class="nav-item">
                     <a class="nav-link" href="/register">Register<span class="sr-only">(current)</span></a>
@@ -35,21 +37,16 @@
         </div>
     </nav>
 
-    <!-- begin content -->
-    <!-- fixed width container for content -->
-    <div class="container-lg mt-5">
+    <!-- begin vertical settings nav -->
+    <ul class="nav flex-column col-2 h-100 nav-pills bg-secondary border shadow">
+        <li class="nav-item">
+            <a class="nav-link" href="/posts/edit">Posts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/settings">Settings</a>
+        </li>
+    </ul>
 
-        <!--Header Image -->
-        <img src="..." class="img-fluid" alt="Responsive image">
-        <!--Title & Author -->
-        <h1>Title</h1>
-        <h6>Author</h6>
-
-        <!--Content -->
-        <p class="font-weight-normal mt-5">Normal weight text.</p>
-
-        
-    </div>
 
     <!-- bootstrap scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -61,6 +58,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
         integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
         crossorigin="anonymous"></script>
+
+    <script src="/bootstrapJS.js"></script>
 </body>
 
 </html>
